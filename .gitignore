@@ -3,3 +3,4 @@
 venv
 runs
 yolov8m.pt
+output_videos/
