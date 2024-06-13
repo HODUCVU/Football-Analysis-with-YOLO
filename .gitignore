@@ -3,4 +3,4 @@
 venv
 runs
 yolov8m.pt
-models/*
+models/last.pt
