@@ -1,2 +1,6 @@
 .vscode
 *pycache*
+venv
+runs
+yolov8m.pt
+models/*
