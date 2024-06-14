@@ -1,17 +1,17 @@
 import cv2
 
 def read_video(video_path):
+    # count_frame = 0
     cap = cv2.VideoCapture(video_path)
     frames = []
     while cap.isOpened():
+        # if count_frame >= 10:
+        #     break
         ret, frame = cap.read()
         if not ret:
             break
         frames.append(frame)
-        
-        # Wait for a key press
-        if cv2.waitKey(1) & 0xFF == ord('q'):  # Press 'q' to quit
-            break
+        # count_frame += 1
     cap.release()
     return frames
 
