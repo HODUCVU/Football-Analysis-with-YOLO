@@ -2,3 +2,4 @@ ultralytics
 roboflow
 opencv-python
 supervision
+scikit-learn
