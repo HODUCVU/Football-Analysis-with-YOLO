@@ -5,12 +5,11 @@ from player_ball_assigner import PlayerBallAssginer
 import numpy as np
 import argparse
 
-def main(video_input_path='input_videos/08fd33_4.mp4'):
+def main(video_input_path='input_videos/08fd33_4.mp4', model_path = 'models/best.pt', output_video_path = 'output_videos/output_video.avi'):
     # Get frames from video
     video_frames = read_video(video_input_path)
     
     # Tracker object
-    model_path = 'models/best.pt'
     tracker = Tracker(model_path)
     
     stub_path = "stubs/track_stubs.pkl"
@@ -57,12 +56,13 @@ def main(video_input_path='input_videos/08fd33_4.mp4'):
     # Draw bbox for output frames
     video_frames_output = tracker.draw_annotations(video_frames=video_frames, tracks=tracks, team_ball_control_rate=team_ball_control_rate)
     # Save video
-    output_video_path = 'output_videos/output_video.avi'
     save_video(video_frames_output, output_video_path)
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process video for tracking.')
     parser.add_argument('--video_input_path', type=str, default='input_videos/08fd33_4.mp4', help='Path to the input video file')
+    parser.add_argument('--model_path', type=str, default='models/best.pt', help='Path to the model')
+    parser.add_argument('--video_output_path', type=str, default='output_videos/output_video.avi', help='Path to the model')
     
     args = parser.parse_args()
-    main(args.video_input_path)
+    main(args.video_input_path, args.model_path, args.video_output_path)

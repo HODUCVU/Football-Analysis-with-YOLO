@@ -21,5 +21,5 @@ https://github.com/HODUCVU/Football-Analysis-with-YOLO/assets/73897430/ab75e9fe-
 ```
 * Running
 ```
-> python3 main.py --video_input_path input_videos/another_video.mp4
+> python3 main.py --video_input_path input_videos.mp4 --video_output_path output_video.avi --model models/best.pt
 ```
