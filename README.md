@@ -5,7 +5,11 @@
 | Data Training | [https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc/dataset/1](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc/dataset/1) |
 | Input Videos | [https://www.kaggle.com/competitions/dfl-bundesliga-data-shootout/data](https://www.kaggle.com/competitions/dfl-bundesliga-data-shootout/data)|
 ## Output
-https://github.com/HODUCVU/Football-Analysis-with-YOLO/assets/73897430/ab75e9fe-865e-473f-8723-bf6c3e55d20b
+
+
+https://github.com/HODUCVU/Football-Analysis-with-YOLO/assets/73897430/c15b96eb-65f1-4d0a-9734-114a27f94e76
+
+
 
 ## Usage
 * Set up virtual-env (if necessary)
